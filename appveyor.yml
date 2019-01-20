@@ -1,0 +1,19 @@
+image: Visual Studio 2017
+
+configuration: Release
+
+before_build:
+- cmd: |-
+    cd %APPVEYOR_BUILD_FOLDER%
+    mkdir cmake_build
+    cd cmake_build
+    cmake --version
+    cmake c:\projects\Transform360\Transform360
+
+# Build aom with Visual Studio 2017
+build:
+  project: C:\projects\zopfli\cmake_build
+ 
+artifacts:
+ - path: \**\Transform360*.exe
+   name: Transform360
