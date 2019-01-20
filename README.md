@@ -1,4 +1,4 @@
-# Transform360
+# Transform360 [![AppVeyor Build Status](https://ci.appveyor.com/project/EwoutH/transform360/branch/patch-1?svg=true)](https://ci.appveyor.com/project/EwoutH/transform360)
 
 Transform360 is a video/image filter that transforms a 360 video from one projection to another. Usually, the input projection is equirectangular and the output projection is cubemap.
 We also keep the previous version of the transform, Transform_V1, in the file vf_transform_v1.c
